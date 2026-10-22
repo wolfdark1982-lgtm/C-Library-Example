@@ -1,2 +1,2 @@
-g++ main.cpp -o LibaryExample.exe
+g++ -I. main.cpp -o LibaryExample.exe
 pause
