@@ -5,7 +5,7 @@ inline LRESULT CALLBACK SimpleProc(HWND h, UINT m, WPARAM w, LPARAM l){
   if (m == WM_DESTROY) PostQuitMessage(0);
   return DefWindowProc(h,m,w,l);
 }
-inline HWND addwindow(int width, int height,const char*title){
+inline HWND AddWindow(int width, int height,const char*title){
   WNDCLASS a = {0};
   a.lpfnWndProc = SimpleProc;
   a.lpszClassName = "ShortClass";
